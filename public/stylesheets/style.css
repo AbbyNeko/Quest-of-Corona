@@ -266,3 +266,9 @@ h2{
 .rpgui-cursor-default {
   overflow-y:scroll !important;
 }
+
+#grave {
+  text-align: center; 
+  vertical-align: middle;
+  width:15em;
+}
