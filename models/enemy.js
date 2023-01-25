@@ -22,6 +22,7 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
 
+    /*
     Enemy.create({
         id: 1,
         name: 'Murder Hornet',
@@ -42,6 +43,7 @@ module.exports = function(sequelize, DataTypes) {
         attack: 8,
         health: 35
     });
+    */
 
     Enemy.sync();
     

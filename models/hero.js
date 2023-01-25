@@ -14,6 +14,7 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
 
+    /*
     Hero.create({
         id: 1,
         name: 'Covid Knight',
@@ -40,7 +41,7 @@ module.exports = function(sequelize, DataTypes) {
         name: 'Covid Warlock',
         attack: 4,
         health: 35
-    });
+    });*/
 
     Hero.sync();
     
