@@ -113,13 +113,19 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
         id: req.body.id
       }
     }).then(foundPath => {
+      console.log(foundPath);
+      if(foundPath === null) {
+        console.log('it is null')
+      }else {
 
-      //updating path with level up and resetting heal/block
-      foundPath.update({ heal: false, block: false, is_dead: false}, {
-        where: {
-          id: foundPath.id
-        }
-      });
+         //updating path with level up and resetting heal/block
+          foundPath.update({ heal: false, block: false, is_dead: false}, {
+            where: {
+              id: foundPath.id
+            }
+          });
+
+      }
 
       res.status(200).end();
       
