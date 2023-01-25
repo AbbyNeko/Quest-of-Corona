@@ -24,7 +24,7 @@
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "public": "^0.1.4",
-    "sequelize": "^6.5.2",
+    "sequelize": "^5.22.5",
     "session": "^0.1.0"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^10.2.0",
     "prettier": "^1.13.7",
-    "sequelize-cli": "^6.5.2"
+    "sequelize-cli": "^6.6.0"
   },
   "repository": {
     "type": "git",
