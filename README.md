@@ -31,9 +31,9 @@ npm start
 
 Players create an account with a character name, email, and password. Sign-in uses email and password. Each account has one saved adventure; choosing a new hero replaces that save. Battle health, enemy health, stage, and used abilities are saved after each action.
 
-The former Express, Passport, Sequelize, and MySQL server is not used by the Netlify deployment. Its source and MySQL schema are preserved under [`archive/`](./archive/README.md). **Do not run `archive/legacy-server/db/schema.sql` in Supabase**; it is MySQL-specific and would not create the tables used by this app.
+The old Express, Passport, Sequelize, and MySQL server is not used by the Netlify deployment. Its source and MySQL schema are preserved under [`archive/`](./archive/README.md). **Do not run `archive/legacy-server/db/schema.sql` in Supabase**; it is MySQL-specific and would not create the tables used by this app.
 
-Existing MySQL accounts and saves are not imported by this rebuild; users create new Supabase accounts. Importing old records would require access to the original database and a separate migration.
+Existing MySQL accounts and saves are not imported by this rebuild; users will need to create new player accounts.
 
 ## Contributors
 
