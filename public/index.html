@@ -1,100 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--Bootstrap Framework-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-  <!--RPGUI Framework-->
-  <link rel="stylesheet" type="text/css" href="RPGUI/dist/rpgui.min.css" />
-  <script src="RPGUI/dist/rpgui.min.js"></script>
-  <!--UIKit Framework-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
-  <!--CSS Stylesheet-->
-  <link rel="stylesheet" href="stylesheets/style.css" />
-  <!--Google Font-->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <title>Quest of Corona</title>
-</head>
-
-<body>
-  <div class="rpgui-container framed-golden rpgui-content rpgui-cursor-default" style="width: 100%; height: 100%; overflow-y:scroll">
-    <div class="rpgui-container framed-golden-2" style="width: 95%; text-align: center;">
-      <h1 id="header">Quest of Corona</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Choose your hero and journey through the world of Quest of Corona."
+    />
+    <title>Quest of Corona</title>
+    <link rel="stylesheet" href="/RPGUI/dist/rpgui.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/RPGUI/dist/rpgui.min.js" defer></script>
+    <script src="/supabase-config.js" defer></script>
+    <script src="/assets/app.js" defer></script>
+  </head>
+  <body>
+    <div id="app" aria-live="polite">
+      <main class="rpgui-container framed app-shell">
+        <p class="loading">Loading your adventure...</p>
+      </main>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <hr class="golden" />
-    <div class="rpgui-container framed" id="mainindexdiv">
-      <div class="uk-width-expand@m" id="indexdiv">
-        <div class="rgui-content" id="topindexdiv">
-          <div id="signupdiv">
-            <form class="signup">
-              <h3>Sign Up</h3>
-              <p>Email:</p>
-              <input type="text" placeholder="Please write your e-mail" id="signEmail" />
-              <p>Password:</p>
-              <input type="password" placeholder="Please write your password" id="signPass" />
-              <p>Character Name:</p>
-              <input type="text" placeholder="Please write your character's name" id="signName" />
-              <br>
-              <button class="rpgui-button uk-flex-between" type="click" id="signBtn">
-                <p>Sign Up</p>
-              </button>
-            </form>
-            <br />
-          </div>
-          <div id="logindiv">
-            <form class="login">
-
-            <h3>Log In</h3>
-            <p>Name:</p>
-            <input type="text" placeholder="Please write your character's name" id="loginName" />
-            <p>Password:</p>
-            <input type="password" placeholder="Please write your password" id="loginPass" />
-            <br>
-            <button class="rpgui-button uk-flex-between" type="click" id="loginBtn">
-              <p>Log In</p>
-            </button>
-            </form>
-            <br>
-          </div>
-        </div>
-        <!-- <div id="bottomindexdiv">
-         <blockquote class="uk-column-span uk-flex uk-flex-center" id="bottomdiv">
-            <p>Adventure lies before the path of those who choose it.</p>
-         </blockquote> 
-        </div>  -->
-      </div>
-    </div>
-    <footer id="footer" class="rpgui-container framed-grey"
-      style="bottom: 20px; position: relative; top:70%; width: 99%; text-align: center;">
-      <p class="uk-margin-remove">&copy; 2020</p>
-      <div class="uk-grid">
-        <div class="uk-width-auto@s uk-width-1-2@m">
-          <p class="uk-margin-remove">Contributors:</p>
-          <p class="uk-margin-small">
-            Limpioso, Abigail | Ponce, Melanie | Torres, Robert | Walker, Evan
-          </p>
-        </div>
-        <div class="uk-width-auto@s uk-width-1-2@m">
-          <p class="uk-margin-remove">Powered By:</p>
-          <p class="uk-margin-small">
-            RPGUI Framework | Piskel | 
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>

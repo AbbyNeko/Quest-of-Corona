@@ -1,43 +1,31 @@
 {
   "name": "quest-of-corona",
   "version": "1.0.0",
-  "main": "server.js",
   "scripts": {
+    "build": "node scripts/build.js",
     "test": "npm run lint",
-    "start": "node server.js",
+    "start": "npm run build && node scripts/serve.js",
     "lint": "eslint --quiet .",
-    "fix": "eslint --fix .",
-    "watch": "nodemon server.js"
+    "fix": "eslint --fix ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "2.4.3",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-handlebars": "^5.3.1",
-    "express-session": "^1.16.1",
-    "handlebars": "^4.7.7",
-    "mysql": "^2.18.1",
-    "mysql2": "^1.6.5",
-    "passport": "^0.6.0",
-    "passport-local": "^1.0.0",
-    "public": "^0.1.4",
-    "sequelize": "^5.22.5",
-    "session": "^0.1.0"
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
+    "@supabase/supabase-js": "^2.118.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "cross-env": "^5.2.0",
+    "esbuild": "^0.28.2",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^10.2.0",
-    "prettier": "^1.13.7",
-    "sequelize-cli": "^6.6.0"
+    "prettier": "^1.13.7"
   },
   "repository": {
     "type": "git",
