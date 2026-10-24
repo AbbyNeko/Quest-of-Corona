@@ -4,3 +4,4 @@
 /node_modules/
 /public/assets/app.js
 /public/supabase-config.js
+/archive/*
